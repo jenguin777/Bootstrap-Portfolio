@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- No need for reset.css as Bootstrap has its own reset -->
+    <!-- Linking Google Fonts, fonts should go before CSS, need to fix href if using -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Yellowtail" rel='stylesheet' type='text/css'> -->
+    <!-- Linking to most recent Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Sticky Footer (next 2 links)-->
+    <link href="sticky-footer.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Linking my own CSS last for overrides-->
+    <link rel="stylesheet" type="text/css" href="css/style-index.css">
+    <!-- Adding favicon of a kayak -->
+    <link rel="icon" href="images/icons8-kayaking-64.png" type="image/gif" sizes="16x16">
+    <title>Jen Fahey</title>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Jen Fahey</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content -->
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>About Me</h2>
+        </div>
+        <div class="row">
+            <!--Do I need to make columns on the left and right of About Me for the gray background?-->
+            <div class="col">
+                <h2>Column2</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Column3</h2>
+                </div>
+            </div>
+    <div class="row"></div>
+        <div class="col">
+            <img id="bio-image" src="images/JenProfilePic.jpg" alt="Jen Fahey">
+        </div>
+        <div class="col">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+</div>
+  
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Copyright &#169;</span>
+    </div>
+</footer>
+
+</body>
+</html>
