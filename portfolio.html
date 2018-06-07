@@ -2,19 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- No need for reset.css as Bootstrap has its own reset -->
-    <!-- Linking Google Fonts, fonts should go before CSS, need to fix href if using -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Yellowtail" rel='stylesheet' type='text/css'> -->
     <!-- Linking to most recent Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <!-- Sticky Footer (next 2 links)-->
-    <link href="sticky-footer.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Linking my own CSS last for overrides-->
-    <link rel="stylesheet" type="text/css" href="css/style-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-portfolio.css">
     <!-- Adding favicon of a kayak -->
-    <link rel="icon" href="images/icons8-kayaking-64.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="assets/images/icons8-kayaking-64.png" type="image/gif" sizes="16x16">
     <title>Jen Fahey</title>
 </head>
 
@@ -22,55 +17,109 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Jen Fahey</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
+        <a class="navbar-brand" href="#">Jen Fahey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
 </nav>
-<br>
+<!-- End Navbar -->
     
 <!-- Content -->
 
-<!-- Begin *** content from Basic Portfolio before implementing Bootstrap-->
-<section class="wrapper">
-    <div>
-        <h2 id="portfolio-header">Portfolio</h2>
-    </div>
+<section>
     <div class="container">
-       <figure>
-           <img class="apps app1" src="images/AnimatedComputer.jpg" alt="app1">
-           <figcaption id="app-label1">Application1</figcaption>
-        </figure>
-        <figure>
-            <img class="apps app2" src="images/AntiqueCompass.jpg" alt="app2">
-            <figcaption id="app-label2">Application2</figcaption>
-        </figure>
-        <!-- I had to renumber my apps due to positioning -->
-        <figure>
-            <img class="apps app3" src="images/BurningCards.jpg" alt="app3">
-            <figcaption id="app-label3">Application4</figcaption>
-        </figure>
-        <figure>
-            <img class="apps app4" src="images/PaintSplat.jpg" alt="app6">
-            <figcaption id="app-label4">Application3</figcaption>
-        </figure>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>Portfolio</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-md-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="assets/images/AnimatedComputer.jpg" alt="Responsive image">
+                    <figcaption id="app-label1">Application1</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="assets/images/AntiqueCompass.jpg" alt="Responsive image">
+                    <figcaption id="app-label2">Application2</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+            <!-- For future apps-->
+            </div>
+            <div class="col-md-3">
+            <!-- For future apps-->
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-md-3">
+                <!-- I had to renumber my apps due to positioning before, see if you can fix in bootstrap -->
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="assets/images/BurningCards.jpg" alt="Responsive image">
+                    <figcaption id="app-label3">Application3</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <!-- I had to renumber my apps due to positioning before, see if you can fix in bootstrap -->
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="assets/images/PaintSplat.jpg" alt="Responsive image">
+                    <figcaption id="app-label4">Application4</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+            <!-- For future apps-->
+            </div>
+            <div class="col-md-3">
+            <!-- For future apps-->
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-md-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="assets/images/MeltingIceCube.jpg" alt="Responsive image">
+                    <figcaption id="app-label3">Application5</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="assets/images/CookieToppings.jpg" alt="Responsive image">
+                    <figcaption id="app-label2">Application6</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+            <!-- For future apps-->
+            </div>
+            <div class="col-md-3">
+            <!-- For future apps-->
+            </div>
+        </div>
     </div>
+        
+
 </section>
-<!-- End *** content from Basic Portfolio before implementing Bootstrap-->
+
+<!-- End Content -->
 
 <footer class="footer">
     <div class="container">
