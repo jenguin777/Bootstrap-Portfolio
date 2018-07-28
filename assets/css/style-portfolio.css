@@ -51,8 +51,9 @@ main {
     margin-bottom: 20px;
     font-size: 26px;
     line-height: 30px;
+    border-bottom: 3px solid #ddd;
     /* border-bottom: 2px solid #cccccc; */
-    font-weight: bold; 
+    /* font-weight: bold;  */
 }
 
 .container {
