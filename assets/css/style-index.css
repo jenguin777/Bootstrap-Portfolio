@@ -31,18 +31,8 @@ body {
     border-bottom: 3px solid #ddd;
 }
 
-/* .page-header {
-  max-width: 100%;
-  color: #4aaaa5;
-  align-content: left;
-  margin-bottom: 20px;
-  font-size: 26px;
-  line-height: 50px;
-  border-bottom: 3px solid #ddd;
-} */
-
 .container {
-  width: 60%;
+  width: 40%;
   background-color: #ffffff;
   margin-top: 40px;
   padding-bottom: 40px;
